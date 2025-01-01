@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin: 15px auto;
+      }
+      th,
+      td {
+        border: 1px solid red;
+        padding: 5px;
+      }
+      thead {
+        background-color: pink;
+      }
+      tfoot {
+        background-color: #ccc;
+      }
+
+      .table-stripe {
+        width: 300px;
+      }
+
+      .table-stripe tr:nth-child(odd) {
+        background-color: #b7b7b7;
+      }
+      .table-stripe tr:hover {
+        background-color: rgb(192, 255, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Jawalakhel</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Amount</th>
+      </tr>
+      <tr>
+        <td>Ruppes</td>
+        <td>Paisa</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th rowspan="2">Country</th>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>Korea</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Mango</td>
+          <td>200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>600</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2 style="text-align: center">Striped Table</h2>
+    <table class="table-stripe">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Jawalakhel</td>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Jawalakhel</td>
+      </tr>
+    </table>
+  </body>
+</html>
