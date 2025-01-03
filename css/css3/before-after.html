@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      h1::before {
+        content: open-quote;
+        color: red;
+      }
+      h1::after {
+        content: close-quote;
+        color: red;
+      }
+
+      p::before {
+        content: "👉";
+      }
+      p::after {
+        content: url(giphy.gif);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      tempora laudantium voluptatibus mollitia, impedit optio, corporis quae aut
+      nulla itaque id modi dolore facilis! Dolore veritatis dignissimos
+      laudantium doloremque vero!
+    </p>
+  </body>
+</html>
