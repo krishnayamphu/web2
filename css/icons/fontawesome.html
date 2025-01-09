@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css icons</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .text-success {
+        color: rgb(7, 101, 7);
+      }
+      .text-danger {
+        color: rgb(242, 19, 19);
+      }
+      .big-icon {
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-image"></i>
+    <i class="fa-solid fa-camera"></i>
+
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-apple"></i>
+
+    <h3>Style Icons</h3>
+    <i class="fa-solid fa-house text-success"></i>
+    <i class="fa-solid fa-house text-danger"></i>
+
+    <h3>Icon Sizing</h3>
+    <p>
+      <i class="fa-solid fa-coffee fa-2xs"></i>
+
+      <i class="fa-solid fa-coffee fa-xs"></i>
+
+      <i class="fa-solid fa-coffee fa-sm"></i>
+
+      <i class="fa-solid fa-coffee"></i>
+
+      <i class="fa-solid fa-coffee fa-lg"></i>
+
+      <i class="fa-solid fa-coffee fa-xl"></i>
+
+      <i class="fa-solid fa-coffee fa-2xl"></i>
+    </p>
+
+    <p>
+      <i class="fa-solid fa-coffee big-icon"></i>
+    </p>
+
+    <h3>Fixed withd icons</h3>
+    <!-- vertically aligning icons -->
+    <div style="font-size: 2rem">
+      <div>
+        <i class="fa-solid fa-skating fa-fw" style="background: DodgerBlue"></i>
+        Skating
+      </div>
+      <div>
+        <i class="fa-solid fa-skiing fa-fw" style="background: SkyBlue"></i>
+        Skiing
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-skiing-nordic fa-fw"
+          style="background: DodgerBlue"
+        ></i>
+        Nordic Skiing
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-snowboarding fa-fw"
+          style="background: SkyBlue"
+        ></i>
+        Snowboarding
+      </div>
+      <div>
+        <i
+          class="fa-solid fa-snowplow fa-fw"
+          style="background: DodgerBlue"
+        ></i>
+        Snowplow
+      </div>
+    </div>
+
+    <h3>Icons in a List</h3>
+    <ul class="fa-ul">
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List
+        icons can
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be
+        used to
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span
+        >replace bullets
+      </li>
+      <li>
+        <span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists
+      </li>
+    </ul>
+
+    <h3>Rotate Icons</h3>
+    <div class="fa-3x">
+      <i class="fa-solid fa-snowboarding"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-90"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-180"></i>
+      <i class="fa-solid fa-snowboarding fa-rotate-270"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-horizontal"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-vertical"></i>
+      <i class="fa-solid fa-snowboarding fa-flip-both"></i>
+    </div>
+
+    <h3>Animating Icons</h3>
+    <div class="fa-3x">
+      <i class="fa-solid fa-circle-plus fa-beat"></i>
+      <i class="fa-solid fa-heart fa-beat"></i>
+      <i
+        class="fa-solid fa-heart fa-beat"
+        style="--fa-animation-duration: 0.5s"
+      ></i>
+      <i
+        class="fa-solid fa-heart fa-beat"
+        style="--fa-animation-duration: 2s"
+      ></i>
+      <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2"></i>
+    </div>
+
+    <div class="fa-3x">
+      <i class="fa-solid fa-volleyball fa-bounce"></i>
+
+      <!-- bounce with extra rebound and "squish" on landing -->
+      <i
+        class="fa-solid fa-basketball fa-bounce"
+        style="
+          --fa-bounce-land-scale-x: 1.2;
+          --fa-bounce-land-scale-y: 0.8;
+          --fa-bounce-rebound: 5px;
+        "
+      ></i>
+
+      <!-- bounce animation with no "squish" -->
+      <i
+        class="fa-solid fa-frog fa-bounce"
+        style="
+          --fa-bounce-start-scale-x: 1;
+          --fa-bounce-start-scale-y: 1;
+          --fa-bounce-jump-scale-x: 1;
+          --fa-bounce-jump-scale-y: 1;
+          --fa-bounce-land-scale-x: 1;
+          --fa-bounce-land-scale-y: 1;
+        "
+      ></i>
+
+      <!-- bounce animation with no "squish" or "rebound" -->
+      <i
+        class="fa-solid fa-envelope fa-bounce"
+        style="
+          --fa-bounce-start-scale-x: 1;
+          --fa-bounce-start-scale-y: 1;
+          --fa-bounce-jump-scale-x: 1;
+          --fa-bounce-jump-scale-y: 1;
+          --fa-bounce-land-scale-x: 1;
+          --fa-bounce-land-scale-y: 1;
+          --fa-bounce-rebound: 0;
+        "
+      ></i>
+    </div>
+
+    <div class="fa-3x">
+      <i class="fa-solid fa-sync fa-spin"></i>
+      <i class="fa-solid fa-circle-notch fa-spin"></i>
+      <i class="fa-solid fa-cog fa-spin"></i>
+      <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+      <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+      <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i>
+    </div>
+
+    <hr />
+
+    <p><i class="fa-solid fa-envelope"></i> info@yourdomain.com</p>
+    <p><i class="fa-solid fa-phone"></i> +977 9845162354</p>
+    <button><i class="fa-solid fa-paper-plane"></i> Send</button>
+    <button><i class="fa-solid fa-user-plus"></i> Add User</button>
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  </body>
+</html>

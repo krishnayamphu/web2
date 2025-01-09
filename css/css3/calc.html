@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      :root {
+        --primary-color: rgb(6, 69, 204);
+        --secondry-color: rgb(151, 175, 254);
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: pink;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      main {
+        background-color: var(--secondry-color);
+        height: calc(100vh - 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Brand Name</header>
+    <main>main</main>
+  </body>
+</html>
