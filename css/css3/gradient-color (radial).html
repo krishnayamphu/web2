@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        width: 150px;
+        height: 100px;
+        border: 2px solid orangered;
+        margin: 15px;
+        float: left;
+      }
+      .box1 {
+        background-image: radial-gradient(red, blue);
+      }
+      .box2 {
+        background-image: radial-gradient(circle, red, blue);
+      }
+      .box3 {
+        background-image: radial-gradient(circle at 70% 50%, red, blue);
+      }
+      .box4 {
+        background-image: radial-gradient(closest-side at 90% 70%, red, blue);
+      }
+      .box5 {
+        background-image: radial-gradient(circle, red, blue, yellow, green);
+      }
+      .box6 {
+        background-image: radial-gradient(
+          rgba(255, 0, 0, 0.2),
+          rgba(0, 0, 255, 1)
+        );
+      }
+      .box7 {
+        background-image: radial-gradient(
+          circle,
+          red 33%,
+          blue 33%,
+          blue 66%,
+          green 66%
+        );
+      }
+
+      .box8 {
+        background-image: repeating-radial-gradient(
+          circle,
+          rgb(201, 2, 2),
+          yellow,
+          rgb(0, 37, 200) 10%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+  </body>
+</html>
