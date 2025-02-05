@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Charts</title>
+  </head>
+  <body>
+    <div id="myChart" style="max-width: 700px; height: 400px"></div>
+
+    <div
+      id="myChart2"
+      style="width: 100%; max-width: 600px; height: 500px"
+    ></div>
+
+    <div
+      id="myChart3"
+      style="width: 100%; max-width: 600px; height: 500px"
+    ></div>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+          ["Contry", "Mhl"],
+          ["Italy", 55],
+          ["France", 49],
+          ["Spain", 44],
+          ["USA", 24],
+          ["Argentina", 15],
+        ]);
+
+        // Set Options
+        const options = {
+          title: "World Wide Wine Production",
+        };
+
+        // Draw
+        const chart = new google.visualization.BarChart(
+          document.getElementById("myChart")
+        );
+        chart.draw(data, options);
+      }
+
+      // line chart
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart2);
+
+      function drawChart2() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+          ["Price", "Size"],
+          [50, 7],
+          [60, 8],
+          [70, 8],
+          [80, 9],
+          [90, 9],
+          [100, 9],
+          [110, 10],
+          [120, 11],
+          [130, 14],
+          [140, 14],
+          [150, 15],
+        ]);
+
+        // Set Options
+        const options = {
+          title: "House Prices vs. Size",
+          hAxis: { title: "Square Meters" },
+          vAxis: { title: "Price in Millions" },
+          legend: "none",
+        };
+
+        // Draw
+        const chart = new google.visualization.LineChart(
+          document.getElementById("myChart2")
+        );
+        chart.draw(data, options);
+      }
+
+      //3D charts
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart3);
+
+      function drawChart3() {
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+          ["Contry", "Mhl"],
+          ["Italy", 54.8],
+          ["France", 48.6],
+          ["Spain", 44.4],
+          ["USA", 23.9],
+          ["Argentina", 14.5],
+        ]);
+
+        // Set Options
+        const options = {
+          title: "World Wide Wine Production",
+          is3D: true,
+        };
+
+        // Draw
+        const chart = new google.visualization.PieChart(
+          document.getElementById("myChart3")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+  </body>
+</html>
