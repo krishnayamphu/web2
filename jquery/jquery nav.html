@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        padding: 30px;
+      }
+
+      nav {
+        background-color: orangered;
+        text-align: center;
+        width: 100%;
+      }
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px 30px;
+        color: white;
+      }
+      .nav-fixed {
+        position: fixed;
+        top: 0;
+        box-shadow: 0 2px 2px #717171;
+      }
+      .nav-fixed a {
+        padding: 8px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Home</a>
+      <a href="#">Home</a>
+      <a href="#">Home</a>
+      <a href="#">Home</a>
+    </nav>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).scroll(function () {
+        let h = $("nav").height();
+        let sh = $(document).scrollTop();
+        if (sh > h) {
+          $("nav").addClass("nav-fixed");
+        } else {
+          $("nav").removeClass("nav-fixed");
+        }
+      });
+    </script>
+  </body>
+</html>

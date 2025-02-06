@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid orangered;
+        padding: 30px;
+      }
+      .card {
+        box-shadow: 0 0 5px 2px #292929;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+      nesciunt id sequi asperiores amet explicabo temporibus ducimus maiores est
+      illo, perferendis recusandae fugit, voluptatem possimus beatae tempora
+      odit delectus.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").addClass("card");
+        });
+        $("#btn2").click(function () {
+          $("p").removeClass("card");
+        });
+      });
+    </script>
+  </body>
+</html>
