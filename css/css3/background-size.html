@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 350px;
+        height: 200px;
+        background-color: pink;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        margin: 15px;
+        float: left;
+        border: 2px solid red;
+      }
+      .cover {
+        background-size: cover;
+      }
+      .contain {
+        background-size: contain;
+      }
+      .box3 {
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>box</div>
+    <div class="cover">box 1</div>
+    <div class="contain">box 2</div>
+    <div class="box3">box 3</div>
+  </body>
+</html>
