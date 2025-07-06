@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .row {
+        border: 1px solid red;
+        margin: 15px;
+        height: 100px;
+        display: flex;
+      }
+      .col {
+        background-color: pink;
+        padding: 10;
+      }
+      .col:nth-child(even) {
+        background-color: aquamarine;
+      }
+      .col:last-child {
+        padding: 15px;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </section>
+    <section class="row flex-start">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </section>
+
+    <section class="row center">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </section>
+
+    <section class="row flex-end">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </section>
+
+    <section class="row baseline">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </section>
+  </body>
+</html>
