@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      @keyframes ratateBox {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+      section {
+        perspective: 500px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: red;
+        animation: ratateBox 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">Box</div>
+    </section>
+  </body>
+</html>
