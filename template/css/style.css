@@ -1,0 +1,7 @@
+.hero-banner {
+  height: 100vh;
+  background: url("../images/agency-hero-img.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
