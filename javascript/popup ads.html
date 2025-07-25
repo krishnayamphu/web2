@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ad-overlay {
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        width: 600px;
+        height: auto;
+      }
+      .content img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ad-overlay">
+      <div class="content">
+        <button onclick="hide()">X</button>
+        <img src="bg.jpg" alt="ads" />
+      </div>
+    </div>
+
+    <section>
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi,
+        quas maiores rem debitis enim recusandae corporis reiciendis cumque
+        nulla commodi consequuntur in reprehenderit nemo temporibus repudiandae
+        atque quae tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Ut totam provident maxime culpa libero explicabo ipsam ratione
+        earum, laborum nemo. Voluptatum explicabo commodi quod voluptatem
+        laboriosam voluptas perferendis nemo porro.
+      </p>
+    </section>
+    <script>
+      setTimeout("show()", 5000);
+
+      function show() {
+        document.getElementById("ad-overlay").style.display = "flex";
+      }
+
+      function hide() {
+        document.getElementById("ad-overlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

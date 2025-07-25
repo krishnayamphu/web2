@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="clock" />
+    <script>
+      setInterval("digitalClock()", 1);
+
+      function digitalClock() {
+        const time = new Date();
+        let h = time.getHours(); //0-23
+        let m = time.getMinutes();
+        let s = time.getSeconds();
+        let ms = time.getMilliseconds();
+        let data = h + ":" + m + ":" + s + ":" + ms;
+        document.getElementById("clock").value = data;
+      }
+    </script>
+  </body>
+</html>
