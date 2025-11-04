@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>table</title>
+    <title>Table</title>
     <style>
       table {
         border-collapse: collapse;
-        /* border: 1px solid red; */
         margin: 15px auto;
       }
       th,
       td {
-        border: 1px solid red;
-        padding: 5px 10px;
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      thead {
+        background-color: #4bdc91;
+      }
+      tfoot {
+        background-color: #f4a261;
       }
     </style>
   </head>
@@ -22,14 +28,17 @@
       <tr>
         <th>Name</th>
         <th>Address</th>
+        <th>Contact</th>
       </tr>
       <tr>
-        <td>Ram</td>
-        <td>Patan</td>
+        <td>John Doe</td>
+        <td>123 Main St, Anytown, USA</td>
+        <td>9801234567</td>
       </tr>
       <tr>
-        <td>Hari</td>
-        <td>Pokhara</td>
+        <td>Jane Smith</td>
+        <td>456 Oak St, Sometown, USA</td>
+        <td>9807654321</td>
       </tr>
     </table>
 
@@ -49,8 +58,33 @@
         <td>Nepal</td>
       </tr>
       <tr>
-        <td>India</td>
+        <td>Japan</td>
       </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pen</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Copy</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>70</th>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>

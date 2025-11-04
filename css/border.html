@@ -9,48 +9,39 @@
         width: 100px;
         height: 100px;
         background-color: pink;
+        margin: 15px;
       }
       .box1 {
-        background-color: orange;
-        border-style: solid;
+        border-style: groove;
+        border-width: 10px;
         border-color: red;
-        border-width: 5px;
       }
       .box2 {
-        border: 5px dashed blue;
+        border-left: 5px solid blue;
       }
       .box3 {
-        width: 100px;
-        height: 100px;
-        border-left: 5px solid green;
+        height: 0;
+        border-left: 5px solid blue;
+        border-right: 5px solid red;
+        border-top: 5px solid green;
+        border-bottom: 5px solid yellow;
       }
-      .box5 {
-        height: 100px;
-        border: 10px solid red;
-        border-bottom: 10px solid green;
-        border-left: 10px solid rgb(217, 0, 255);
-        border-right: 10px solid blue;
-      }
-      .box6 {
-        height: 0px;
-        border: 10px solid red;
-        border-bottom: 10px solid green;
-        border-left: 10px solid rgb(217, 0, 255);
-        border-right: 10px solid blue;
+      .box4 {
+        height: 0;
+        width: 0;
+        background-color: transparent;
+        border-left: 50px solid blue;
+        border-right: 50px solid red;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
       }
     </style>
   </head>
   <body>
-    <div class="box1">box1</div>
-    <br />
-    <div class="box2">box2</div>
-    <br />
-    <div class="box3">box3</div>
-    <br />
-    <div class="box4">box4</div>
-    <br />
-    <div class="box5"></div>
-    <br />
-    <div class="box6"></div>
+    <div></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
   </body>
 </html>
