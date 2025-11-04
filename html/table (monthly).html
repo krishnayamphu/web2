@@ -13,7 +13,7 @@
       }
       th,
       td {
-        border: 1px dotted black;
+        border: 1px solid black;
         padding: 8px;
         text-align: center;
       }
@@ -24,6 +24,15 @@
       }
       .disabled {
         color: gray;
+      }
+      .bg-danger {
+        background-color: red;
+      }
+      .text-danger {
+        color: red;
+      }
+      .text-light-danger {
+        color: rgb(197, 130, 130);
       }
     </style>
   </head>
@@ -37,7 +46,7 @@
         <th>We</th>
         <th>Th</th>
         <th>Fr</th>
-        <th>Sa</th>
+        <th class="bg-danger">Sa</th>
       </tr>
       <tr>
         <td class="disabled">26</td>
@@ -46,7 +55,7 @@
         <td class="disabled">29</td>
         <td class="disabled">30</td>
         <td class="disabled">31</td>
-        <td>1</td>
+        <td class="text-danger">1</td>
       </tr>
       <tr>
         <td>2</td>
@@ -55,7 +64,7 @@
         <td>5</td>
         <td>6</td>
         <td>7</td>
-        <td>8</td>
+        <td class="text-danger">8</td>
       </tr>
       <tr>
         <td>9</td>
@@ -64,16 +73,16 @@
         <td>12</td>
         <td>13</td>
         <td>14</td>
-        <td>15</td>
+        <td class="text-danger">15</td>
       </tr>
       <tr>
         <td>16</td>
         <td>17</td>
-        <td>18</td>
+        <td class="text-danger">18</td>
         <td>19</td>
         <td>20</td>
         <td>21</td>
-        <td>22</td>
+        <td class="text-danger">22</td>
       </tr>
       <tr>
         <td>23</td>
@@ -82,7 +91,7 @@
         <td>26</td>
         <td>27</td>
         <td>28</td>
-        <td>29</td>
+        <td class="text-danger">29</td>
       </tr>
       <tr>
         <td>30</td>
@@ -91,7 +100,7 @@
         <td class="disabled">3</td>
         <td class="disabled">4</td>
         <td class="disabled">5</td>
-        <td class="disabled">6</td>
+        <td class="disabled text-light-danger">6</td>
       </tr>
     </table>
   </body>
