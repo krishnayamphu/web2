@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 15px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter username" required />
+      <input type="email" placeholder="Your email" />
+      <input type="number" step="10" />
+      <input type="password" placeholder="Enter password" />
+      <input type="checkbox" checked />Checkbox1
+      <input type="checkbox" />Checkbox 2
+      <input type="radio" name="g" multiple /> Male
+      <input type="radio" name="g" /> Female
+      <input type="range" min="0" max="100" />
+      <input type="color" />
+      <input type="file" />
+      <input type="date" />
+      <input type="week" />
+
+      <textarea rows="5"></textarea>
+      <select name="country" id="">
+        <option value="np">Nepal</option>
+        <option value="jp">Japan</option>
+      </select>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
