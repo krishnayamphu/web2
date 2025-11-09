@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        float: left;
+        margin: 15px;
+      }
+      .box1 {
+        box-shadow: 5px 5px 2px gray;
+      }
+      .box2 {
+        box-shadow: 5px -5px 2px 2px rgb(0, 125, 163);
+      }
+      .box3 {
+        box-shadow: inset 0px 0px 10px 5px gray;
+        background-color: white;
+      }
+      .box4 {
+        box-shadow: 10px 10px 5px red, -10px -10px 5px blue;
+      }
+      .box5:hover {
+        box-shadow: 5px 5px 2px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div>div</div>
+    <div class="box1">box 1</div>
+    <div class="box2">box 2</div>
+    <div class="box3">box 3</div>
+    <div class="box4">box 4</div>
+    <div class="box5">hover</div>
+  </body>
+</html>
