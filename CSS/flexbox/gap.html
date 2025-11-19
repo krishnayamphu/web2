@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox | Container</title>
+    <style>
+      .row {
+        border: 1px solid red;
+        margin: 15px;
+        display: flex;
+
+        width: 400px;
+        height: 100px;
+      }
+      .col {
+        background-color: orange;
+        width: 200px;
+      }
+      .col:nth-child(even) {
+        background-color: green;
+      }
+      .col:last-child {
+        background-color: brown;
+      }
+      .gap-20 {
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+
+    <div class="row gap-20">
+      <div class="col">1</div>
+      <div class="col">2</div>
+      <div class="col">3</div>
+    </div>
+  </body>
+</html>
