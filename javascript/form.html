@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="txtname"
+      placeholder="Enter your name"
+      oninput="textUpper()"
+    />
+    <p>Length: <span id="name_length"></span></p>
+
+    <hr />
+    <input
+      type="range"
+      id="my_range"
+      value="50"
+      min="0"
+      max="1000"
+      oninput="getRangeValue()"
+    />
+    <span id="stats_value"></span>
+    <script>
+      function textUpper() {
+        let data = document.getElementById("txtname").value;
+
+        document.getElementById("txtname").value = data.toUpperCase();
+        document.getElementById("name_length").innerHTML = data.length;
+      }
+
+      function getRangeValue() {
+        let value = document.getElementById("my_range").value;
+        document.getElementById("stats_value").innerHTML = value;
+      }
+    </script>
+  </body>
+</html>
