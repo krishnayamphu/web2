@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <style>
+      p {
+        padding: 30px;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Slide Up</button>
+    <button id="btn2">Slide Down</button>
+    <button id="btn3">Slide Toggle</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+      inventore perspiciatis repudiandae reprehenderit magni consectetur, sint
+      nemo quis voluptas tempora soluta qui nesciunt nihil ad doloribus tenetur,
+      officia beatae quae.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("p").slideUp(1000);
+        });
+
+        $("#btn2").click(function () {
+          $("p").slideDown(1000);
+        });
+
+        $("#btn3").click(function () {
+          $("p").slideToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>

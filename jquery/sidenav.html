@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: rgb(56, 152, 93);
+        padding: 5px 15px;
+      }
+      .sidenav {
+        height: calc(100vh - 30px);
+        max-width: 200px;
+        background-color: teal;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+      }
+      .sidenav a {
+        display: block;
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .show {
+        transform: translateX(0%);
+        transition: all 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button id="btn1">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div class="sidenav show">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".sidenav").toggleClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>
